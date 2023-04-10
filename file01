@@ -1,0 +1,45 @@
+#NUMERO 1
+# nome = input("Qual é o seu nome? ")
+# idade = int(input("Qual é a sua idade? "))
+# peso = float(input("Qual é o seu peso? (em kg) "))
+# altura = float(input("Qual é a sua altura? (em metros) "))
+#
+# if idade >= 18 and peso >= 60 and altura >= 1.70:
+#     print(nome + ", você está apto a servir o exército.")
+# else:
+#     print(nome + ", você não está apto a servir o exército.")
+
+#NUMERO 2
+# frase = "Anotaram a data da maratona"
+# print(frase[::-1])
+# frase = frase.replace(" ", "").lower()
+# if frase == frase[::-1]:
+#     print("A frase é um palíndromo!")
+# else:
+#     print("A frase não é um palíndromo.")
+
+#NUMERO 3
+# dias = int(input("Dias: "))
+# horas = int(input("Horas: "))
+# minutos = int(input("Minutos: "))
+#
+# total_segundos = dias * 86400 + horas * 3600 + minutos * 60
+#
+# print("Total de segundos:", total_segundos)
+
+#NUMERO 4
+# velocidade = int(input("Insira sua velocidade média esperada em km/h: "))
+# distancia = int(input("Insira a distancia da viagem em km: "))
+# tempo = distancia/velocidade
+#
+# print("Tempo de viagem: %.2f horas"% tempo)
+
+#NUMERO 5
+# velocidade = float(input("Velocidade do carro (em km/h): "))
+#
+# if velocidade > 80:
+#     multa = (velocidade - 80) * 5
+#     print("Você foi multado por excesso de velocidade!")
+#     print("Valor da multa: R$ %.2f" % multa)
+# else:
+#     print("Velocidade dentro do limite permitido.")
