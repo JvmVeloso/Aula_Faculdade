@@ -1,0 +1,95 @@
+#1) Imprimir seu nome com uma letra por linha
+# nome = "João Vitor"
+# for letter in nome:
+#     print(letter, end= "\n")
+
+#2) Escreva uma função que receba uma string e conte o número de vogais dentro dela, por exemplo: entrada: ‘Ciência de Dados’,
+# def contar_vogais(texto):
+#     vogais = "aeiouAEIOU"
+#     num_vogais = 0
+#
+#     for letra in texto:
+#         if letra in vogais:
+#             num_vogais += 1
+#
+#     return num_vogais
+#
+# texto = "Ciencia de Dados"
+# print(contar_vogais(texto))
+
+#3) Desenha moldura. Construa uma função que desenhe um retângulo usando os caracteres ‘+’ , ‘−’ e ‘| ‘. Esta função deve receber dois parâmetros, linhas e colunas, sendo que o valor por omissão é o valor mínimo igual a 1 e o valor máximo é 20. Se valores fora da faixa forem informados, eles devem ser modificados para valores dentro da faixa de forma elegante.
+# def desenhar_moldura(linhas=1, colunas=1):
+#     linhas = max(min(linhas, 20), 1)
+#     colunas = max(min(colunas, 20), 1)
+#
+#
+#     print('+' + '-' * (colunas - 2) + '+')
+#     for i in range(linhas - 2):
+#         print('|' + ' ' * (colunas - 2) + '|')
+#     print('+' + '-' * (colunas - 2) + '+')
+# desenhar_moldura(8,5)
+
+#4) Crie um função que retorna o resto de uma divisão
+# def resto_divisao (dividendo, divisor):
+#     return dividendo % divisor
+# resto = resto_divisao(10, 3)
+# print(resto)
+
+#5) Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado.
+
+# distancia = float(input("Km percorrido: "))
+# dias = float(input("dias viajando: "))
+#
+# aluguel = 60 * dias
+# gasolina = 0.15 * distancia
+#
+# Total = aluguel + gasolina
+#
+# print("O valor a se pagar é: ",f"R$ {Total:.2f}")
+
+#6) Escreva um programa para calcular a redução do tempo de vida de um fumante. Pergunte a quantidade de cigarros fumados por dia e quantos anos ele já fumou. Considere que um fumante perde 10 minutos de vida a cada cigarro, e calcule quantos dias de vida um fumante perderá. Exiba o total em dias.
+
+# cigarros_por_dia = int(input("Quantos cigarros você fuma por dia? "))
+# anos_de_fumo = int(input("Por quantos anos você já fumou? "))
+# minutos_perdidos_por_cigarro = 10
+# dias_por_ano = 365
+# minutos_por_dia = 24 * 60
+# minutos_perdidos = cigarros_por_dia * minutos_perdidos_por_cigarro * anos_de_fumo * dias_por_ano
+# dias_perdidos = minutos_perdidos // minutos_por_dia
+# print(f"Um fumante que fuma {cigarros_por_dia} cigarros por dia e já fumou por {anos_de_fumo} anos perderá {dias_perdidos} dias de vida.")
+
+
+#7) Validar e corrigir número de telefone.
+# Faça um programa que leia um número de telefone, e corrija o número no caso deste conter somente 7 dígitos, acrescentando o '3' na frente. O usuário pode informar o número com ou sem o traço
+# separador
+
+# numero = input("Digite o número de telefone: ")
+# # Remove o traço separador, se presente
+# numero = numero.replace("-", "")
+# if len(numero) == 7:
+#     numero_corrigido = "3" + numero
+#     print(f"Número corrigido: {numero_corrigido[:3]}-{numero_corrigido[3:]}")
+# else:
+#     print(f"Número informado: {numero[:3]}-{numero[3:]}")
+
+
+# #8) Faça uma função Calculadora que recebe uma expressão matemática e retorna o resultado
+# Ex:
+# Entrada: Digite uma expressão matemática: 4+5
+# Saída: O resultado é 9
+# def calculadora(expressao):
+#     try:
+#         resultado = eval(expressao)
+#         return resultado
+#     except:
+#         print("Expressão inválida!")
+#         return None
+#
+# expressao = input("Digite uma expressão matemática: ")
+# resultado = calculadora(expressao)
+#
+# if resultado is not None:
+#     print(f"O resultado é {resultado}")
+
+
+
